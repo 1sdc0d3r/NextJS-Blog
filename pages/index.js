@@ -1,6 +1,26 @@
 import Head from "next/head";
 import Link from "next/link";
+import Layout, { siteTitle } from "../components/Layout";
+import utilStyles from "../styles/utils.module.css";
 
+export default function Home() {
+  return (
+    <Layout home>
+      <Head>
+        <title>{siteTitle}</title>
+      </Head>
+      <section className={utilStyles.headingMd}>
+        <p>[~My name is Jack Barry and I love to code~]</p>
+        <p>
+          This is my first sample website with Next.js using their{" "}
+          <a href="https://nextjs.org/learn">tutorial</a>.
+        </p>
+      </section>
+    </Layout>
+  );
+}
+
+/*
 export default function Home() {
   return (
     <div className="container">
@@ -15,7 +35,7 @@ export default function Home() {
           <Link href="/posts/first-post">
             <a>this page!</a>
           </Link>
-          {/* Learn <a href="https://nextjs.org">Next.js!</a> */}
+          // Learn <a href="https://nextjs.org">Next.js!</a> 
         </h1>
 
         <p className="description">
@@ -212,3 +232,4 @@ export default function Home() {
     </div>
   );
 }
+*/

@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Learn <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
         <p className="description">
@@ -54,12 +54,12 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
+          Powered by <img src="/vercel.svg" alt="Vercel" className="logo" />
         </a>
       </footer>
 
       <style jsx>{`
+        //? Why this jsx attribute? is it because it is in a jsx language based file to know how to format?
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
@@ -190,7 +190,7 @@ export default function Home() {
         }
       `}</style>
 
-      <style jsx global>{`
+      <style global jsx>{`
         html,
         body {
           padding: 0;
@@ -205,5 +205,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }

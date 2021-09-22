@@ -16,7 +16,7 @@ export async function getStaticProps() {
 
 export default function Home(props) {
   const { allPostsData } = props;
-  console.log(allPostsData);
+  //! console.log(allPostsData);
   return (
     <Layout home>
       <Head>

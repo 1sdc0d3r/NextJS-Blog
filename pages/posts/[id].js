@@ -13,7 +13,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  console.log("[id] getStaticProps", { params });
+  //!   console.log("[id] getStaticProps", { params });
 
   const postData = await getPostData(params.id);
   return {
@@ -24,7 +24,7 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Post({ postData }) {
-  console.log({ postData });
+  //!   console.log({ postData });
   const { title, id, date, contentHtml } = postData;
   return (
     <>
